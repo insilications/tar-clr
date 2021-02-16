@@ -45,10 +45,10 @@ rm -rf dir
 tar --xattrs --xattrs-include='*' -xf archive.tar
 
 # Newer systems print = instead of + here
-getcap dir/file | sed 's/+/=/'
+getcap dir/file | sed -e 's/+/=/' -e 's|dir/file = |dir/file |'
 ],
 [0],
-[dir/file = cap_chown=ei
+[dir/file cap_chown=ei
 ])
 
 AT_CLEANUP
