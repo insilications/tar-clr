@@ -64,7 +64,7 @@
 #endif
 
 #ifndef DEFAULT_BLOCKING
-# define DEFAULT_BLOCKING 20
+# define DEFAULT_BLOCKING 256
 #endif
 
 /* Print a message if not all links are dumped */

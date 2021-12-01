@@ -334,7 +334,7 @@ AC_MSG_RESULT($DEFAULT_ARCHIVE)
 AC_ARG_VAR([DEFAULT_BLOCKING],
            [Define default blocking factor (default: 20)])
 AC_MSG_CHECKING(for default blocking)
-DEFAULT_BLOCKING=${DEFAULT_BLOCKING-20}
+DEFAULT_BLOCKING=${DEFAULT_BLOCKING-256}
 AC_DEFINE_UNQUOTED(DEFAULT_BLOCKING, $DEFAULT_BLOCKING,
   [Define to a number giving the default blocking size for archives.])
 AC_MSG_RESULT($DEFAULT_BLOCKING)
