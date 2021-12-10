@@ -323,9 +323,6 @@ check_time (char const *file_name, struct timespec t)
 	      diff.tv_nsec += BILLION;
 	      diff.tv_sec--;
 	    }
-	  WARNOPT (WARN_TIMESTAMP,
-		   (0, 0, _("%s: time stamp %s is %s s in the future"),
-		    file_name, tartime (t, true), code_timespec (diff, buf)));
 	}
     }
 }
